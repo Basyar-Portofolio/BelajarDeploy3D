@@ -6,11 +6,11 @@ const Loader = () => {
   return (
     <Html>
       
-      <div className="flex flex-row gap-2 mt-32 ">
-        <div class="w-4 h-4 rounded-full bg-blue-700 animate-bounce [animation-delay:.7s]"></div>
-        <div class="w-4 h-4 rounded-full bg-blue-700 animate-bounce [animation-delay:.3s]"></div>
-        <div class="w-4 h-4 rounded-full bg-blue-700 animate-bounce [animation-delay:.7s]"></div>
-        
+      <div className="flex mt-16 color ">
+      <span className="loading loading-ring loading-xs text-indigo-300"></span>
+  <span className="loading loading-ring loading-sm text-violet-700"></span>
+<span span className="loading loading-ring loading-md text-fuchsia-600"></span>
+<span className="loading loading-ring loading-lg text-rose-950"></span>
       </div>
     </Html>
   );
