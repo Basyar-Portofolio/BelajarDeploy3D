@@ -26,7 +26,7 @@ const Hero = () => {
     w-full flex justify-center items-center">
       <a href="#about">
         <div className="w-[28px] h-[48px] rounded-3xl
-        border-4 border-tertiary flex justify-center
+        border-4 border-sky-300 flex justify-center
         items-start p-2">
           <motion.div
           animate={{
@@ -38,7 +38,7 @@ const Hero = () => {
             repeatType: "loop"
           }}
           className="w-3 h-2 rounded-full
-          bg-secondary mb-1"
+          bg-white mb-1"
           />
         </div>
       </a>
