@@ -1,17 +1,12 @@
-import { Html, useProgress } from "@react-three/drei";
+import { Html,  } from "@react-three/drei";
 
 const Loader = () => {
-  const { progress } = useProgress();
 
   return (
     <Html>
-      
-      <div className="flex mt-16 color ">
-      <span className="loading loading-ring loading-xs text-indigo-300"></span>
-  <span className="loading loading-ring loading-sm text-violet-700"></span>
-<span span className="loading loading-ring loading-md text-fuchsia-600"></span>
-<span className="loading loading-ring loading-lg text-rose-950"></span>
-      </div>
+      <div className="loader border-t-2 rounded-full border-red-500 bg-purple-200 animate-spin
+      h-8 aspect-square w-8 flex justify-center items-center text-yellow-700"></div>
+
     </Html>
   );
 };

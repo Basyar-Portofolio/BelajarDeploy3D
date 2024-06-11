@@ -6,9 +6,13 @@ import CanvasLoader from "../Loader"; // Ensure this path is correct
 const Computers = ({ isMobile }) => {
   const { scene } = useGLTF("./desktop_pc/scene.gltf"); // Destructure 'scene' directly
 
+  useEffect(() => {
+    console.log("isMobile:", isMobile);
+  }, [isMobile]);
+
   return (
     <mesh>
-      <hemisphereLight intensity={1 } groundColor='blue' />
+      <hemisphereLight intensity={1} groundColor="blue" />
       <pointLight intensity={1.5} />
       <primitive
         object={scene}
@@ -41,7 +45,7 @@ const ComputersCanvas = () => {
 
   return (
     <Canvas
-      frameloop='demand'
+      frameloop="demand"
       shadows
       dpr={[1, 2]}
       camera={{ position: [20, 3, 5], fov: 25 }}
@@ -57,6 +61,7 @@ const ComputersCanvas = () => {
       </Suspense>
       <Preload all />
     </Canvas>
+    
   );
 };
 
