@@ -1,12 +1,17 @@
-import { Html,  } from "@react-three/drei";
+// src/components/Loader.js
+import React from "react";
+import { Html, useProgress } from "@react-three/drei";
+import "./Loader/Loader.css"; //
 
 const Loader = () => {
+  const { progress } = useProgress();
 
   return (
-    <Html>
-      <div className="loader border-t-2 rounded-full border-red-500 bg-purple-200 animate-spin
-      h-8 aspect-square w-8 flex justify-center items-center text-yellow-700"></div>
-
+    <Html center>
+      <div className="loader-container mt-36">
+        <div className="spinner"></div>
+        <p className="loading-text">Loading {Math.round(progress)}%</p>
+      </div>
     </Html>
   );
 };
